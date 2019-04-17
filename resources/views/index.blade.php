@@ -3,7 +3,7 @@
 @section('title', 'OurPixels')
 
 @section('head')
-	<script src="{{ URL::asset('js/renderer.js') }}"></script>
+	<script src="{{ URL::asset('js/renderer.js', true) }}"></script>
 	<script>
 		$(document).ready(() => {
 			$('canvas').each(function () {
@@ -61,7 +61,7 @@
 	<li class="{{ $images->onFirstPage() ? 'disabled' : 'waves-effect'}}"><a href="{{ $images->onFirstPage() ? '#' : $images->previousPageUrl() }}"><i class="material-icons">chevron_left</i></a></li>
 	@for ($i = 1; $i <= $images->lastPage(); $i++)
 		<li class="{{$i == $images->currentPage() ? 'active' : 'waves-effect'}}">
-			<a href="{{ $images->url($i) }}">{{$i}}</a>
+			<a href="/?page={{ $i }}">{{$i}}</a>
 		</li>
 	@endfor
 	<li class="{{ $images->currentPage() == $images->lastPage() ? 'disabled' : 'waves-effect'}}"><a href="{{ $images->currentPage() == $images->lastPage() ? '#' : $images->nextPageUrl() }}"><i class="material-icons">chevron_right</i></a></li>

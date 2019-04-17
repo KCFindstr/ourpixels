@@ -3,7 +3,7 @@
 @section('title',  ($user ? $user->Username . '\'s Artworks' : 'No Such User'))
 
 @section('head')
-	<script src="{{ URL::asset('js/renderer.js') }}"></script>
+	<script src="{{ URL::asset('js/renderer.js', true) }}"></script>
 	<script>
 		$(document).ready(() => {
 			$('canvas').each(function () {

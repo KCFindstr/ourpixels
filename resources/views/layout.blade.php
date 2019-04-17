@@ -11,7 +11,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- my css -->
-	<link rel="stylesheet" href="{{ URL::asset('css/common.css') }}"/>
+	<link rel="stylesheet" href="{{ URL::asset('css/common.css', true) }}"/>
 	<script>
 	async function sha256(message) {
 		const msgBuffer = new TextEncoder('utf-8').encode(message);										

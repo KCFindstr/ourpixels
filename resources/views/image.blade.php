@@ -3,7 +3,7 @@
 @section('title', 'Ourpixels - ' . ($image ? $image->Name : 'Not Found'))
 
 @section('head')
-	<script src="{{ URL::asset('js/renderer.js') }}"></script>
+	<script src="{{ URL::asset('js/renderer.js', true) }}"></script>
 	<script>
 		const token = "{{ $token }}";
 		const username = "{{ $username }}";
@@ -15,7 +15,7 @@
 		});
 	</script>
 	@if ($iseditor)
-	<script src="{{ URL::asset('js/editor.js') }}"></script>
+	<script src="{{ URL::asset('js/editor.js', true) }}"></script>
 	@endif
 @endsection
 
