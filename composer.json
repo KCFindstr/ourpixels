@@ -12,7 +12,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "ext-pdo_sqlite": "*"
+        "ext-pdo_mysql": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
