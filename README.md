@@ -11,7 +11,7 @@ Everyone who is interested in pixel art, either fans or creators!
 - ImageData: data of a specific artwork. With creator userId.
 - Access: Specifies whether one user can view/edit a specific image. Includes one userId and one ImageId.
 
-![Database Diagram](https://github.com/KCFindstr/ourpixels/database.png)
+![Database Diagram](https://github.com/KCFindstr/ourpixels/raw/master/database.png)
 
 ## Laravel
 - GET routes for gallery, login, register, profile, and image page.
